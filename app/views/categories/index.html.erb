@@ -1,0 +1,20 @@
+<ul style="display: flex">
+<a href="/products">Thiết bị</a> |
+<a href="/categories">Loại thiết bị</a> |
+<a href="/publishers">Nhà SX</a> |
+<a href="/providers">Nhà CC</a> |
+</ul>
+<ul>
+  <% @categories.each do |category| %>
+    <li>
+      <h3>Tên loại: </h3><%= category.nameC %>
+    </li>
+   <li>
+      <h3>Đơn vị tính: </h3><%= category.unit %>
+    </li>
+    <li>
+      <h3>Ghi chú: </h3><%= category.note %>
+    </li>
+    <hr>
+  <% end %>
+</ul>

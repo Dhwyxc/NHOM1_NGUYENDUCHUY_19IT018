@@ -1,0 +1,29 @@
+<ul style="display: flex">
+<a href="/products">Thiết bị</a> |
+<a href="/categories">Loại thiết bị</a> |
+<a href="/publishers">Nhà SX</a> |
+<a href="/providers">Nhà CC</a> |
+</ul>
+<ul>
+  <% @products.each do |product| %>
+    <li>
+      <h3>Tên Thiết bị: </h3><%= product.nameProduct %>
+    </li>
+   <li>
+      <h3>Mã NSX: </h3><%= product.publisher_id %>
+    </li>
+    <li>
+      <h3>Thông số kỹ thuật: </h3><%= product.specifi %>
+    </li>
+    <li>
+      <h3>Mã loại: </h3><%= product.category_id %>
+    </li>
+    <li>
+      <h3>Giá: </h3><%= product.price %>
+    </li>
+    <li>
+      <h3>Mã NCC: </h3><%= product.provider_id %>
+    </li>
+    <hr>
+  <% end %>
+</ul>

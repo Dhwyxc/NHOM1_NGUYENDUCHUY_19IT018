@@ -1,0 +1,20 @@
+<ul style="display: flex">
+<a href="/products">Thiết bị</a> |
+<a href="/categories">Loại thiết bị</a> |
+<a href="/publishers">Nhà SX</a> |
+<a href="/providers">Nhà CC</a> |
+</ul>
+<ul>
+  <% @providers.each do |provider| %>
+    <li>
+      <h3>Tên NCC: </h3><%= provider.nameProvider %>
+    </li>
+    <li>
+      <h3>Địa Chỉ: </h3><%= provider.add %>
+    </li>
+    <li>
+      <h3>SDT: </h3><%= provider.phonenum %>
+    </li>
+    <hr>
+  <% end %>
+</ul>

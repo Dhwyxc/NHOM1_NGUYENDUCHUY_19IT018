@@ -1,0 +1,17 @@
+<ul style="display: flex">
+<a href="/products">Thiết bị</a> |
+<a href="/categories">Loại thiết bị</a> |
+<a href="/publishers">Nhà SX</a> |
+<a href="/providers">Nhà CC</a> |
+</ul>
+<ul>
+  <% @publishers.each do |publisher| %>
+    <li>
+      <h3>Tên NSX: </h3><%= publisher.nameP %>
+    </li>
+    <li>
+      <h3>Quốc gia: </h3><%= publisher.nation %>
+    </li>
+    <hr>
+  <% end %>
+</ul>
